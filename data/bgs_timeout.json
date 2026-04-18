@@ -1,0 +1,25 @@
+{
+  "monitor": "High 500 error rate",
+  "service": "benefits-documents",
+  "environment": "prod",
+  "severity": "High",
+  "triggered_at": "10:14 AM",
+  "tags": [
+    "service:benefits-documents",
+    "env:prod",
+    "dependency:bgs",
+    "team:bds"
+  ],
+  "errors": [
+    "BGSServiceException",
+    "SocketTimeoutException"
+  ],
+  "messages": [
+    "Read timed out calling BGS",
+    "Retry exhausted after 3 attempts"
+  ],
+  "trace": {
+    "failing_span": "bgs.claims.lookup",
+    "latency_ms": 8200
+  }
+}
