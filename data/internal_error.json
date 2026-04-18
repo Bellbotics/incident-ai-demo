@@ -1,0 +1,23 @@
+{
+  "monitor": "High 500 error rate",
+  "service": "benefits-documents",
+  "environment": "prod",
+  "severity": "High",
+  "triggered_at": "10:21 AM",
+  "tags": [
+    "service:benefits-documents",
+    "env:prod",
+    "team:bds"
+  ],
+  "errors": [
+    "NullPointerException"
+  ],
+  "messages": [
+    "NullPointerException in document upload handler",
+    "Unhandled exception in request processing"
+  ],
+  "trace": {
+    "failing_span": "documents.upload",
+    "latency_ms": 450
+  }
+}
